@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+.html, body {
+    width: 100%;
+    height: 100%;
+    font-family: AppleSDGothicNeo, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: -0.04em;
+}
+
+
+.frm {
+    /* margin-top: 100px; */
+    border-top: 2px solid #000;
+    overflow: hidden;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+.middle .frm li {
+    padding: 15px;
+}
+
+.middle .bd_lst li i {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    margin-top: -10px;
+    font-size: 20px;
+    color: #aeaeae;
+}
+
+.middle .bd_lst li .p1 {
+    padding-top: 40px;
+    color: #222;
+    font-size: 20px;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 70%;
+}
+
+.middle .bd_lst li .p2 {
+    color: #a1a3a4;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* #p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+} */
+
+.middle .bd_lst li .img {
+    width: 130px;
+    height: 130px;
+    display: inline-flex;
+    float: left;
+    margin-right: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.clear {
+    display: block;
+    float: none;
+    clear: both;
+    height: 0;
+    width: 100%;
+    font-size: 0 !important;
+    line-height: 0 !important;
+    overflow: hidden;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none;
+}
+
+.footer_wrap {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 45px 0;
+}
+
+.footer_wrap .p1 {
+    font-size: 13px;
+    font-weight: bold;
+    line-height: 1.8;
+    margin-bottom: 5px;
+}
+
+.footer_wrap .p2 {
+    font-size: 13px;
+    color: #84878a;
+}
+
+</style>
+</head>
+<body>
+
+<div id="head">
+	<div class="headB">
+		<a class="logo">
+			<img alt="법무법인 로백스" src="http://lawvax.co.kr/image/site/logo.png">
+		</a>
+	</div>
+		
+		<div class="menu">
+			<ul>
+				<li>
+					<a href="/main/lawvax/index.php" >LawVax</a>
+				</li>
+				<li>
+					<a href="/main/tak/index/php">주요 업무 분야</a>
+				</li>
+				<li>
+					<a href="/main/member/inex.php">구성원</a>
+				</li>
+				<li>
+					<a href="/main/member/index.php" class="act">소식·자료</a>
+				</li>
+				<li>
+					<a href="/main/map/index.php">오시는길</a>
+				</li>
+			</ul>
+		</div>
+		
+		<select id="lang_slt">
+			<option value="kor" selected>KOR</option>
+			<option value="eng">ENG</option>		
+		</select>
+		
+	<div class="middle">
+		<div class="inner">
+			<div class="sub_title1" style="visibility: visible; ">소식·자료
+			</div>
+			<div class="sub_title1" style="visibility: visible;">
+				<!-- <img alt="home" src="http://lawvax.co.kr/image/common/pagenate_r.png">
+				"소식·자료" -->
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+				<i class="fas fa-home"> > 소식·자료</i>
+			</div>
+			<img src="http://lawvax.co.kr/image/site/logo.png" class="sub_logo" style="visibility: visible;">		
+			
+			
+			<form name="frm" action="/main/board/list.php" method="get" class="frm" id="frm">
+		        <input type="hidden" name="page_now" value="0">
+		        <input type="hidden" name="page_row" value="6">
+
+       			<ul class="bd_lst";>
+        			<li target="JTI1MjUzREl6TQ==">
+        			<div class="img" style="background:url(http://lawvax.co.kr/image/site/logo2.png) no-repeat center center; background-size: cover;"></div>
+        			<p class="p1">아시아경제 - [논단]재벌의 길을 가는 산은</p>
+        			<p class="p2">2022.08.10</p>
+        			<i class="fas fa-search"></i>
+        			<div class="clear"></div>
+        			</li>
+        			
+        			<li target="JTI1MjUzREV6TQ==">
+        			<div class="img" style="background:url(http://lawvax.co.kr/image/site/logo2.png) no-repeat center center;background-size:cover"></div>
+        			<p class="p1">뉴스핌 - [기고] 스타트업, 사법 리스크에 잘 대응하려면</p>
+        			<p class="p2">2022.08.10</p>
+        			<i class="fas fa-search"></i>
+        			<div class="clear"></div>
+        			</li>
+        			
+        			<li target="JTI1MjUzREF6TQ==">
+        			<div class="img" style="background:url(http://lawvax.co.kr/image/site/logo2.png) no-repeat center center;background-size:cover"></div>
+        			<p class="p1">‘거액 외환 송금’ 사건, 가상자산거래소도 책임 있을까</p>
+        			<p class="p2">2022.08.02</p>
+        			<i class="fas fa-search"></i>
+        			<div class="clear"></div>
+        			</li>
+        			
+        			<li target="JTI1MjUzRGtqTQ==">
+        			<div class="img" style="background:url(http://lawvax.co.kr/image/site/logo2.png) no-repeat center center;background-size:cover"></div>
+        			<p class="p1">글로벌 스탠더드 맞도록 수사구조 정비해야</p>
+        			<p class="p2">2022.07.25</p>
+        			<i class="fas fa-search"></i>
+        			<div class="clear"></div>
+        			</li>
+        			
+        			<li target="JTI1MjUzRGdqTQ==">
+        			<div class="img" style="background:url(http://lawvax.co.kr/image/site/logo2.png) no-repeat center center;background-size:cover"></div>
+        			<p class="p1">[논단] 가상자산은 증권인가 아닌가</p>
+        			<p class="p2">2022.07.14</p>
+        			<i class="fas fa-search"></i>
+        			<div class="clear"></div>
+        			</li>
+        			
+        			<li target="JTI1MjUzRFVqTQ==">
+        			<div class="img" style="background:url(http://lawvax.co.kr/image/site/logo2.png) no-repeat center center;background-size:cover"></div>
+        			<p class="p1">‘거버먼트 어토니’ 배출 로펌, 새 정부서 기대감</p>
+        			<p class="p2">2022.07.13</p>
+        			<i class="fas fa-search"></i>
+        			<div class="clear"></div>
+        			</li>        
+        			
+        			</ul>
+        	<div class="clear"></div>
+        	
+        	<div class="margint50"></div>
+				<div class="paginate-complex">
+				<strong>1</strong>
+				<a href="http://lawvax.co.kr/main/board/list.php?page_now=1&page_row=6">2</a>
+				<a>3</a>
+				<a>4</a>
+				<a>5</a>
+				</div>
+		   
+		   
+
+<hr>		
+		
+	<div id="footer">
+		<div class="footer_wrap">
+		    <a href="/"><img src="http://lawvax.co.kr/image/site/logo.png"></a>
+		    <p class="p1">서울특별시 서초구 사임당로 18 석오빌딩 3층 법무법인 로백스 | 공동대표 김기동, 이동열<br>대표전화 : 02)583-6300 | 팩스 : 02)583-6303 | 이메일 : lawvax@lawvax.co.kr</p>
+		    <p class="p2">Copyright© LawVax. All rights reserved.</p>
+		</div>
+	</div>	
+		
+		
+		
+</div>
+
+
+
+
+</div>
+
+</body>
+</html>
